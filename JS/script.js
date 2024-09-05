@@ -8,13 +8,14 @@ document.getElementById('fuelForm').addEventListener('submit', function(event) {
   
   // Validation check: make sure both values are greater than zero and realistic
   if (gasolineEfficiency <= 0 || alcoholEfficiency <= 0) {
-    alert('Error: Fuel efficiency (km/l) values must be greater than zero.');
+    // Evitar o envio do formulário antes da validação
+    alert('Erro: Os valores de eficiência do combustível (km/l) devem ser maiores que zero.');
     return; // Stop the form from submitting if validation fails
   }
   
   // Further validation: check if the values are too high (optional)
   if (gasolineEfficiency > 100 || alcoholEfficiency > 100) {
-    alert('Error: Fuel efficiency (km/l) seems too high. Please check your input.');
+    alert('Erro: A eficiência do combustível (km/l) parece muito alta. Por favor, verifique sua entrada.');
     return; // Stop the form from submitting if validation fails
   }
   
@@ -31,17 +32,17 @@ document.getElementById('fuelForm').addEventListener('submit', function(event) {
   
   let resultMessage;
   if (roundedGasolineCostPerKm < roundedAlcoholCostPerKm) {
-    resultMessage = 'Gasoline is more cost-efficient.';
+    resultMessage = 'A gasolina é mais eficiente em termos de custo.';
   } else if (roundedGasolineCostPerKm > roundedAlcoholCostPerKm) {
-    resultMessage = 'Alcohol is more cost-efficient.';
+    resultMessage = 'O etanol é mais eficiente em termos de custo.';
   } else {
-    resultMessage = 'Both fuels have the same cost-efficiency.';
+    resultMessage = 'Ambos os combustíveis têm a mesma eficiência de custo.';
   }
   
   // Display the result
   document.getElementById('result').innerText = `
-    Gasoline cost per km: R$ ${roundedGasolineCostPerKm.toFixed(2)} \n
-    Alcohol cost per km: R$ ${roundedAlcoholCostPerKm.toFixed(2)} \n
+    Custo da gasolina por km: R$ ${roundedGasolineCostPerKm.toFixed(2)} \n
+    Custo do álcool por km: R$ ${roundedAlcoholCostPerKm.toFixed(2)} \n
     ${resultMessage}
   `;
 });
