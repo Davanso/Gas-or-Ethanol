@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/translate.css">
+    <title>Gasolina ou Etanol?</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Fuel Cost Calculator</h1>
+        <p>Determine if gasoline or alcohol is more cost-efficient for your car.</p>
+      </header> <!-- Header -->
+
+    <form id="fuelForm">
+        <!-- Label and input for gasoline price per liter -->
+        <label for="gasolinePrice">Gasoline Price per Liter (R$):</label>
+        <input type="number" id="gasolinePrice" min="1" step="0.01" placeholder="0.0" required>
+
+      
+        <!-- Label and input for alcohol price per liter -->
+        <label for="alcoholPrice">Alcohol Price per Liter (R$):</label>
+        <input type="number" id="alcoholPrice" min="1" step="0.01" placeholder="0.0" required>
+      
+        <!-- Label and input for gasoline km per liter -->
+        <label for="gasolineEfficiency">Gasoline Efficiency Average (km/l):</label>
+        <input type="number" id="gasolineEfficiency" min="1" step="0.1" placeholder="0.0" required>
+      
+        <!-- Label and input for alcohol km per liter -->
+        <label for="alcoholEfficiency">Alcohol Efficiency Average (km/l):</label>
+        <input type="number" id="alcoholEfficiency" min="1" step="0.1" placeholder="0.0" required>
+      
+        <!-- Submit button -->
+        <div class="button-64-center">
+        <button class="button-64" role="button" type="submit"><span class="text">Calculate</span>
+        </button>
+        </div>
+        
+      </form>
+
+      <!-- Result area -->
+      <div id="result"></div>
+
+      <div class="translate-container">
+        <button id="translateButton">Translate</button>
+        <div id="google_translate_element"></div>
+      </div>
+      
+      <script src="JS/script.js"></script>
+      <script src="JS/translate.js"></script>
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+
+<footer class="footer">
+  <p>
+    &copy;Todos os direitos reservados.
+  </p>
+</footer>
+</html>
