@@ -12,7 +12,8 @@
 
 ## 🔋 Features
 🌟 Real JS project;
-🌟 Testing my habilities,
+🌟 Testing my skills.
+🌟 Translate button using JS.
 
 ## 💬 Contact
 If you’d like to get in touch or discuss opportunities, feel free to email me at gui.social.ti@gmail.com or follow me on social media:
