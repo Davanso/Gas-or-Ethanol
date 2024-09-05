@@ -7,7 +7,7 @@
 
 
 ## 📜 How to see the project in action
-1. acces: 
+1. access: https://davanso.github.io/Gas-or-Ethanol/
    
 
 ## 🔋 Features
