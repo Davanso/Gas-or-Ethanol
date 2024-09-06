@@ -117,5 +117,32 @@ input {
 }
 
 .footer {
-  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+  color: rgb(5, 6, 45);
+  margin-top: 80px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+  color: rgb(5, 6, 45);
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(5, 6, 45);
+}
+
+.social-icons a:hover {
+  color: #5B42F3
+}
+
+.social-icons i {
+  font-size: 24px;
 }
